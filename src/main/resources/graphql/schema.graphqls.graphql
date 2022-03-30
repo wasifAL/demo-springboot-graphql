@@ -1,0 +1,16 @@
+type Organization{
+    id:ID!
+    name:String
+    email:String
+    mobile:String
+    address:String
+}
+type Query{
+    organization: [Organization]
+}
+
+query {
+    organizations {
+        id
+    }
+}
